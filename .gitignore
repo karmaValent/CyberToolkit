@@ -1,0 +1,9 @@
+reports/*
+logs/*
+*.xlsx
+*.csv
+*.txt
+*.json
+*.xml
+*.log
+__pycache__/

@@ -1,0 +1,60 @@
+source ~/CyberToolkit/lib/checks.sh
+
+clear
+
+echo "================================================="
+echo "          CYBER TOOLKIT v$VERSION"
+echo "================================================="
+echo " Author :Karma"
+echo " Platform : Kali Linux"
+echo Framework : OSINT & Pentest Toolkit
+	 License   : MIT
+	 Version   : 1.0.0 ""
+echo "------------------- OSINT ------------------------"
+echo "1. Username Search (Sherlock)"
+echo "2. Email Recon (theHarvester)"
+echo "3. Domain WHOIS"
+echo "4. IP Lookup"
+echo "5. DNS Lookup"
+echo "6. Shodan Search"
+echo "7. Reports"
+echo "8. Check Installed Tools"
+echo ""
+echo "0. Exit"
+echo "================================================="
+
+read -p "Select option: " opt
+
+case $opt in
+    1)
+        echo "Username module (coming soon)"
+        ;;
+    2)
+        echo "theHarvester module (coming soon)"
+        ;;
+    3)
+        echo "WHOIS module (coming soon)"
+        ;;
+    4)
+        echo "IP Lookup module (coming soon)"
+        ;;
+    5)
+        echo "DNS Lookup module (coming soon)"
+        ;;
+    6)
+        echo "Shodan module (coming soon)"
+        ;;
+    7)
+        echo "Reports module (coming soon)"
+        ;;
+    8)
+        run_checks
+        read -p "Press Enter to continue..."
+        ;;
+    0)
+        exit
+        ;;
+    *)
+        echo "Invalid option"
+        ;;
+esac
