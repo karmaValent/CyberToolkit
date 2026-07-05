@@ -1,0 +1,40 @@
+#!/bin/bash
+
+clear
+
+echo "==============================="
+echo "        OSINT MODULE"
+echo "==============================="
+echo "1) Sherlock"
+echo "2) theHarvester"
+echo "3) WHOIS"
+echo "4) DIG"
+echo "5) Shodan (browser)"
+echo "0) Back"
+echo "==============================="
+
+read -p "Select option: " opt
+
+case $opt in
+    1) sherlock ;;
+    2) theHarvester ;;
+    3)
+        read -p "Domain: " domain
+        whois "$domain"
+        ;;
+    4)
+        read -p "Domain: " domain
+        dig "$domain"
+        ;;
+    5)
+        echo "https://www.shodan.io"
+        ;;
+    0)
+        exit
+        ;;
+    *)
+        echo "Invalid option"
+        ;;
+esac
+
+read -p "Press Enter..."
